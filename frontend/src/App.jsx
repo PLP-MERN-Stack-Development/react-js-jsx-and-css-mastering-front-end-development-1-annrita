@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./App.css";
+// import "./App.css";
 
 // Import your components here
-// import Button from './components/Button';
+import Button from './components/Button';
 // import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
-// import TaskManager from './components/TaskManager';
+import TaskManager from './components/TaskManager';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -47,7 +47,8 @@ function App() {
             </div>
 
             <p className="text-gray-500 dark:text-gray-400 mt-4">
-              Implement your TaskManager component here
+              <TaskManager />
+              {/* Implement your TaskManager component here */}
             </p>
           </div>
         </div>

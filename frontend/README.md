@@ -1,4 +1,4 @@
-### PLP Task Manager — Frontend (Vite + React + Tailwind)
+# PLP Task Manager — Frontend (Vite + React + Tailwind)
 
 A responsive and interactive Task Manager application built with Vite, React, and Tailwind CSS.
 The project demonstrates clean component architecture, React hooks, state management, pagination, search functionality, and API integration.
@@ -7,7 +7,7 @@ The project demonstrates clean component architecture, React hooks, state manage
 ## 📌 Tech Stack
 
 
-## ✨ Features
+### ✨ Features
 
 🌗 Dark & Light Mode (with custom toggle)
 
@@ -27,12 +27,17 @@ The project demonstrates clean component architecture, React hooks, state manage
 
 
 
-## 🖼️ Screenshots
+### 🖼️ Screenshots
+
+```
 [Home Page](images/HomePage.png)
 [Posts Page](images/PostsPage.png)
 
+```
 
 ## 📁 Project Structure
+
+```
 
 frontend/
 ├── src/
@@ -61,6 +66,7 @@ frontend/
 ├── package.json
 └── vite.config.js
 
+```
 
 
 ## 📡 API Integration
@@ -115,7 +121,7 @@ Features implemented:
 
 ## 🌐 Live Demo
 
-Deployed at GitHub Pages
+Deployed 
 
     🔗 Live Demo: 
 
@@ -125,9 +131,12 @@ Deployed at GitHub Pages
 
 AnnRita Mukami Gitonga
 
+```
 💼 Software Engineer | Frontend Developer | Telecommunications & IT Graduate
 📧 Email: annritamukami23@gmail.com
 🐙 GitHub: https://github.com/1-annrita
+
+```
 
 
 
@@ -135,7 +144,10 @@ AnnRita Mukami Gitonga
 
 ### GUIDE: CREATING THE PROJECT FROM SCRATCH
 
+
+
 🔵 STEP 1 — Create a New React application Using Vite
+
 
 Open Git Bash inside the folder where you want the project.
 
@@ -157,6 +169,7 @@ Open Git Bash inside the folder where you want the project.
 		
 		
 🔵 STEP 2 — Install & Configure Tailwind CSS
+
 
 Inside the same folder (frontend)
 
@@ -202,6 +215,7 @@ Inside the same folder (frontend)
 			
 			
 🔵 STEP 3 — Project Structure Setup	
+
         
     A. Project Structure
 ```

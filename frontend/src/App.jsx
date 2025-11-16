@@ -4,7 +4,7 @@ import { ThemeContext } from "./context/Theme";
 
 // Import your components here
 // import Button from './components/Button';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import TaskManager from "./components/TaskManager";
 import Posts from "./pages/Posts";

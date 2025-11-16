@@ -121,9 +121,9 @@ Features implemented:
 
 ## 🌐 Live Demo
 
-Deployed 
+Deployed at Netflify
 
-    🔗 Live Demo: 
+    🔗 Live Demo: https://rita-week-3-tasks-assignment.netlify.app/
 
 
 

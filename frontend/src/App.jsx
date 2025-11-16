@@ -7,7 +7,7 @@ import { ThemeContext } from "./context/Theme";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TaskManager from "./components/TaskManager";
-import Posts from "./components/PublicApiData";
+import Posts from "./pages/Posts";
 
 function App() {
   const [count, setCount] = useState(0);

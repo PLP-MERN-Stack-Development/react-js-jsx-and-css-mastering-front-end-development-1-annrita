@@ -2,10 +2,11 @@ import { useState } from "react";
 // import "./App.css";
 
 // Import your components here
-import Button from './components/Button';
+// import Button from './components/Button';
 // import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
-import TaskManager from './components/TaskManager';
+import TaskManager from "./components/TaskManager";
+import Posts from "./components/PublicApiData";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -56,9 +57,12 @@ function App() {
         {/* API data display will go here */}
         <div className="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
           <h2 className="text-2xl font-bold mb-4">API Data</h2>
-          <p className="text-gray-500 dark:text-gray-400">
+          {/* <p className="text-gray-500 dark:text-gray-400">
             Fetch and display data from an API here
-          </p>
+          </p> */}
+          <div className="text-gray-500 dark:text-gray-400">
+            <Posts />
+          </div>
         </div>
       </main>
 

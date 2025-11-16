@@ -1,25 +1,27 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "./context/Theme";
 // import "./App.css";
 
 // Import your components here
 // import Button from './components/Button';
-// import Navbar from './components/Navbar';
-// import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import TaskManager from "./components/TaskManager";
 import Posts from "./components/PublicApiData";
 
 function App() {
   const [count, setCount] = useState(0);
+  const { darkMode } = useContext(ThemeContext); // get theme
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    // <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div
+      className={`min-h-screen ${
+        darkMode ? "bg-gray-900 text-gray-100" : "bg-gray-100 text-gray-100"
+      }`}
+    >
       {/* Navbar component will go here */}
-      <header className="bg-white dark:bg-gray-800 shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold">PLP Task Manager</h1>
-        </div>
-      </header>
-
+      <Navbar />
       <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
           <div className="flex flex-col items-center justify-center">
@@ -47,10 +49,10 @@ function App() {
               </button>
             </div>
 
-            <p className="text-gray-500 dark:text-gray-400 mt-4">
+            <div className="text-gray-500 dark:text-gray-400 mt-4">
               <TaskManager />
               {/* Implement your TaskManager component here */}
-            </p>
+            </div>
           </div>
         </div>
 
@@ -67,13 +69,7 @@ function App() {
       </main>
 
       {/* Footer component will go here */}
-      <footer className="bg-white dark:bg-gray-800 shadow mt-auto">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-500 dark:text-gray-400">
-            © {new Date().getFullYear()} PLP Task Manager. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -108,6 +108,7 @@ Features implemented:
 3. Install dependencies
 
     npm install
+	npm install prop-types
 
 4. Start the development server
 
@@ -164,8 +165,8 @@ Open Git Bash inside the folder where you want the project.
 	C. Install dependencies:
 
 		npm install
-			OR
-		npm i
+		npm install prop-types
+
 		
 		
 🔵 STEP 2 — Install & Configure Tailwind CSS
